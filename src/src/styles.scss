@@ -29,10 +29,18 @@ a.icon > strong {margin-left:.25rem}
 .modal-card-body div.content {margin:$margin-default}
 
 // import everything - alternatively import just what you need: https://bulma.io/documentation/overview/modular/
-@import "~bulma/bulma"; 
+@import "~bulma/bulma";
 
 // override specific bulma styles
 .section {padding: 2.15rem 1.5rem}
+
+.hero-body {background-color: hsl(217, 71%, 53%)}
+
+.navbar-brand {background-color: hsl(217, 71%, 30%)}
+
+.navbar-menu {background-color: hsl(217, 71%, 30%)}
+
+.icon {color: hsl(217, 71%, 53%)}
 
 @function theme-color($key: "primary") {
     @return map-get($theme-colors, $key);
@@ -41,5 +49,3 @@ a.icon > strong {margin-left:.25rem}
 // Flickity - begin
 .carousel-cell {width:100%}
 // Flickity - end
-
- 
