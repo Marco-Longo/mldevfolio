@@ -3,16 +3,16 @@
 // https://github.com/metafizzy/flickity/issues/754
 @import "~flickity/css/flickity.css";
 
-// Import Lato Google Font
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+// Import Google Font
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 // Update Bulma's global variables
-$family-sans-serif: "Lato", sans-serif;
+$family-sans-serif: "Ubuntu", sans-serif;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // More theme colors could be added here...
-$primary: #454545;
+$primary: #304B73;
 
 $spaces: ("0": 0, "1": 1.65rem, "2": 1.75rem);
 
@@ -20,7 +20,7 @@ $margin-default: map-get($spaces, "2") map-get($spaces, "0");
 
 // Update some of Bulma's component & color variables
 $footer-padding: 3rem 1.5rem;
-$link: hsl(171, 100%, 41%);
+$link: hsl(216, 58%, 45%);
 
 // Custom Styles
 .card-gap {margin-top:1.75rem}
@@ -34,13 +34,13 @@ a.icon > strong {margin-left:.25rem}
 // override specific bulma styles
 .section {padding: 2.15rem 1.5rem}
 
-.hero-body {background-color: hsl(217, 71%, 53%)}
+.hero-body {background-color: hsl(216, 42%, 59%)}
 
-.navbar-brand {background-color: hsl(217, 71%, 30%)}
+.navbar-brand {background-color: hsl(217, 40%, 20%)}
 
-.navbar-menu {background-color: hsl(217, 71%, 30%)}
+.navbar-menu {background-color: hsl(217, 40%, 20%)}
 
-.icon {color: hsl(217, 71%, 53%)}
+.icon {color: hsl(217, 40%, 35%)}
 
 @function theme-color($key: "primary") {
     @return map-get($theme-colors, $key);
