@@ -38,12 +38,12 @@ function openModal(target) {
     if (document.querySelector('#' + carouselId)) {
         // Initialize each carousel one time only
         if ($carousels.length === 0) {
-            $carousels.push(initCarousel(carouselId));
+            $carousels.push(initCarousel(carouselId).on('change', function(index) {document.getElementById('dsapp-vid').pause();}));
         }
         else {
             var index = $carousels.findIndex(c => c.element.id == carouselId);
             if (index === -1) {
-                $carousels.push(initCarousel(carouselId));
+                $carousels.push(initCarousel(carouselId).on('change', function(index) {document.getElementById('dsapp-vid').pause();}));
             }
         }
     }
@@ -51,6 +51,7 @@ function openModal(target) {
 
 function closeModals() {
     rootEl.classList.remove('is-clipped');
+    document.getElementById('dsapp-vid').pause();
     $modals.forEach(function ($el) {
         $el.classList.remove('is-active');
     });
