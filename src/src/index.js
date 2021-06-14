@@ -62,6 +62,7 @@ function pauseVideos() {
     document.getElementById('dsapp-vid').pause();
     document.getElementById('anima-vid').pause();
     document.getElementById('amentia-vid').pause();
+    document.getElementById('apocalypse-vid').pause();
     return;
 }
 
