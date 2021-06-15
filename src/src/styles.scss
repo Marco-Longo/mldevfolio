@@ -27,6 +27,7 @@ $link: hsl(216, 58%, 45%);
 .modal-trigger { cursor: pointer; }
 a.icon > strong {margin-left:.25rem}
 .modal-card-body div.content {margin:$margin-default}
+.video {video {margin-left: 8.5px;}}
 
 // import everything - alternatively import just what you need: https://bulma.io/documentation/overview/modular/
 @import "~bulma/bulma";
