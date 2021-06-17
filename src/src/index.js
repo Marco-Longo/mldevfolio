@@ -64,6 +64,9 @@ function pauseVideos() {
     document.getElementById('amentia-vid').pause();
     document.getElementById('apocalypse-vid').pause();
     document.getElementById('solar-vid').pause();
+    document.getElementById('rogue-vid').pause();
+    document.getElementById('agar-vid').pause();
+    document.getElementById('AI-vid').pause();
     return;
 }
 
